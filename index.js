@@ -16,6 +16,7 @@ function draw(){
     //iterating through all the particles and then filling them 
     particles.forEach((p, index) =>{
         fill(100);
+        stroke(255);
         p.update();
   p.draw();
   //checking for the edges
