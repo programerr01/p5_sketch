@@ -44,7 +44,7 @@ class Particle{
         // Using the variable color so that it looks colorfull
         let r =Math.floor(random(200));
         let g  = Math.floor(random(255));
-       frameRate(20);
+//        frameRate(20);
         noStroke();
     
         fill(`rgba(${r},${g},255,0.9)`, );
@@ -65,7 +65,7 @@ class Particle{
         particles.forEach(particle =>{
             const d = dist(this.pos.x , this.pos.y , particle.pos.x , particle.pos.y);
 
-            if(d < 140){
+            if(d < 50){
                 stroke('rgba(255,255,255,0.1)');
                 line(this.pos.x ,this.pos.y , particle.pos.x , particle.pos.y);
             }
