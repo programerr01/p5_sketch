@@ -3,7 +3,7 @@ const particles = []
 function setup(){  
     //creating the canvas of the full size
     createCanvas(window.innerWidth, window.innerHeight);
-    const numberOfParticles =60;
+    const numberOfParticles =100;
     for(var i = 0;i <numberOfParticles;i++){
         // pushing each particle to the array
         particles.push(new Particle);
