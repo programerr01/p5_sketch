@@ -65,7 +65,7 @@ class Particle{
         particles.forEach(particle =>{
             const d = dist(this.pos.x , this.pos.y , particle.pos.x , particle.pos.y);
 
-            if(d < 50){
+            if(d < 130){
                 stroke('rgba(255,255,255,0.1)');
                 line(this.pos.x ,this.pos.y , particle.pos.x , particle.pos.y);
             }
